@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Donors - Kshitij NGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Donor Management</h1>
+        
+        <div class="bg-white shadow-md rounded-lg">
+            <div class="p-4 border-b">
+                <button id="add-donor-btn" class="bg-green-500 text-white px-4 py-2 rounded">
+                    Add New Donor
+                </button>
+            </div>
+            
+            <table class="w-full" id="donors-table">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="p-3 text-left">Name</th>
+                        <th class="p-3 text-left">Email</th>
+                        <th class="p-3 text-left">Total Donations</th>
+                        <th class="p-3 text-left">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="donors-list">
+                    <!-- Donors will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Donor Modal -->
+        <div id="add-donor-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white p-6 rounded-lg w-96">
+                <h2 class="text-2xl mb-4">Add New Donor</h2>
+                <form id="add-donor-form">
+                    <input type="text" placeholder="Name" required 
+                           class="w-full p-2 border rounded mb-3">
+                    <input type="email" placeholder="Email" required 
+                           class="w-full p-2 border rounded mb-3">
+                    <input type="number" placeholder="Initial Donation" 
+                           class="w-full p-2 border rounded mb-3">
+                    <div class="flex justify-between">
+                        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">
+                            Add Donor
+                        </button>
+                        <button type="button" id="close-donor-modal" class="bg-red-500 text-white px-4 py-2 rounded">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="donors.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij NGO - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@heroicons/css@1.0.6/heroicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-200">
+    <div class="flex h-screen">
+        <!-- Sidebar Navigation -->
+        <div class="w-64 bg-black text-white p-6">
+            <div class="flex items-center mb-10">
+                <img src="indian-flag.png" alt="Kshitij Logo" class="h-12 mr-3">
+                <h1 class="text-2xl font-bold">Kshitij</h1>
+            </div>
+
+            <nav>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-grey-500 rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donors.html" class="flex items-center p-3 hover:bg-black rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 100-4 2 2 0 000 4z"></path>
+                            </svg>
+                            Donors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="volunteers.html" class="flex items-center p-3 hover:bg-black rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                            Volunteers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resource.html" class="flex items-center p-3 hover:bg-black rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                            Resources
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="calender.html" class="flex items-center p-3 hover:bg-indigo-700 rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            Events Calendar
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="transactions.html" class="flex items-center p-3 hover:bg-indigo-700 rounded-lg transition">
+                            <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm4 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
+                            </svg>
+                            Transactions
+                        </a>
+                    </li>
+                </ul>
+            </nav> -->
+
+            <div class="absolute bottom-0 left-0 w-full p-6">
+                <button id="logout-btn" class="w-30 bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 overflow-y-auto p-10">
+            <div class="flex justify-between items-center mb-10">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800" id="greeting">Welcome, Admin</h1>
+                    <p class="text-gray-600">Here's an overview of Kshitij NGO activities</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." 
+                               class="bg-white border border-gray-300 rounded-full py-2 px-4 w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <svg class="absolute right-3 top-3 h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="relative">
+                        <button class="bg-white border border-gray-300 p-2 rounded-full">
+                            <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                            </svg>
+                        </button>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Widgets -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Donors Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Donors</h2>
+                        <a href="donors.html" class="text-indigo-600 hover:text-indigo-800">View All</a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-green-100 rounded-full p-3">
+                            <svg class="h-8 w-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 100-4 2 2 0 000 4z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-2xl font-bold text-gray-900">50</p>
+                            <p class="text-sm text-gray-500">Total Donors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volunteers Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Volunteers</h2>
+                        <a href="volunteers.html" class="text-indigo-600 hover:text-indigo-800">View All</a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                            <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-2xl font-bold text-gray-900">128</p>
+                            <p class="text-sm text-gray-500">Active Volunteers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Resources</h2>
+                        <a href="resource.html" class="text-indigo-600 hover:text-indigo-800">View All</a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-purple-100 rounded-full p-3">
+                            <svg class="h-8 w-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-2xl font-bold text-gray-900">42</p>
+                            <p class="text-sm text-gray-500">Total Resources</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <div class="mt-10">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Recent Activities</h2>
+                    <a href="volunteers.html" class="text-indigo-600 hover:text-indigo-800">View Calendar</a>
+            </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Upcoming Events -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Upcoming Events</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <div>
+                                    <p class="font-medium">Community Cleanup Drive</p>
+                                    <p class="text-sm text-gray-500">12 June 2024</p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Upcoming</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <div>
+                                    <p class="font-medium">Fundraising Gala</p>
+                                    <p class="text-sm text-gray-500">25 July 2024</p>
+                                </div>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Planning</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-medium">Education Workshop</p>
+                                    <p class="text-sm text-gray-500">15 August 2024</p>
+                                </div>
+                                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Transactions -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Recent Transactions</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <div>
+                                    <p class="font-medium">Donation from Ayush Kumar</p>
+                                    <p class="text-sm text-gray-500">₹50,000</p>
+                                </div>
+                                <span class="text-green-600 font-bold">+</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <div>
+                                    <p class="font-medium">Equipment Purchase</p>
+                                    <p class="text-sm text-gray-500">₹25,000</p>
+                                </div>
+                                <span class="text-red-600 font-bold">-</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-medium">Scholarship Fund</p>
+                                    <p class="text-sm text-gray-500">₹75,000</p>
+                                </div>
+                                <span class="text-green-600 font-bold">+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
